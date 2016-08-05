@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/geerlingguy/ansible-role-composer.svg?branch=master)](https://travis-ci.org/geerlingguy/ansible-role-composer)
 
-Installs Composer, the PHP Dependency Manager, on any Linux or UNIX system.
+Installs Composer, the PHP Dependency Manager, on any Linux or UNIX system and update your project.
 
 ## Requirements
 
@@ -46,6 +46,14 @@ GitHub OAuth token, used to avoid GitHub API rate limiting errors when building 
     php_executable: php
 
 The executable name or full path to the PHP executable. This is defaulted to `php` if you don't override the variable.
+
+    composer_update: false 
+
+Define if you want to update your project vendors
+
+    composer_update_paths: [] 
+
+Define paths to update
 
 ## Dependencies
 
