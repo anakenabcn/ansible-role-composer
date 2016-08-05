@@ -1,0 +1,5 @@
+---
+
+- name: Executing composer update
+  shell: /usr/local/bin/composer update chdir={{ item }}
+  with_items: "{{ composer_update_paths }}"
