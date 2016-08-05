@@ -51,3 +51,6 @@
 
 - include: global-require.yml
   when: composer_global_packages|length > 0
+
+- include: update.yml
+  when: composer_update && composer_update_paths|length > 0
