@@ -1,0 +1,5 @@
+---
+
+- name: Executing composer install
+  shell: /usr/local/bin/composer install chdir={{ item }}
+  with_items: "{{ composer_install_paths }}"
